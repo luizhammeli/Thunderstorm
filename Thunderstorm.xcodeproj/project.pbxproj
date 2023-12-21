@@ -7,18 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2544407B2B2CB45900343890 /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544407A2B2CB45900343890 /* Geocoder.swift */; };
+		2544407E2B2CB4C400343890 /* CLGeocoder+Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544407D2B2CB4C400343890 /* CLGeocoder+Geocoder.swift */; };
+		254440802B2DBFEE00343890 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544407F2B2DBFEE00343890 /* MessageView.swift */; };
+		254440822B2DC01C00343890 /* AddLocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254440812B2DC01C00343890 /* AddLocationListView.swift */; };
+		254440842B2F32CF00343890 /* UserDefaults+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254440832B2F32CF00343890 /* UserDefaults+Location.swift */; };
 		25926CC62B1B5F6B0030373C /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */; };
-		25926CC82B1B5F6B0030373C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CC72B1B5F6B0030373C /* ContentView.swift */; };
 		25926CCA2B1B5F6C0030373C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CC92B1B5F6C0030373C /* Assets.xcassets */; };
 		25926CCD2B1B5F6C0030373C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CCC2B1B5F6C0030373C /* Preview Assets.xcassets */; };
+		25926CD82B1B61020030373C /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CD72B1B61020030373C /* LocationsView.swift */; };
+		25926CDA2B1B610A0030373C /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CD92B1B610A0030373C /* LocationsViewModel.swift */; };
+		25926CDD2B1B662E0030373C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CDC2B1B662E0030373C /* Location.swift */; };
+		25926CDF2B1B678F0030373C /* LocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CDE2B1B678F0030373C /* LocationCellViewModel.swift */; };
+		25926CE22B1BBFC80030373C /* LocationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CE12B1BBFC80030373C /* LocationCellView.swift */; };
+		25926CE52B1CA5090030373C /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CE42B1CA5090030373C /* LocationView.swift */; };
+		25926CE82B1CA5160030373C /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CE72B1CA5160030373C /* LocationViewModel.swift */; };
+		25926CEA2B1CA6020030373C /* CurrentConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CE92B1CA6020030373C /* CurrentConditionsView.swift */; };
+		25926CEC2B1CA6280030373C /* CurrentConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CEB2B1CA6280030373C /* CurrentConditionsViewModel.swift */; };
+		25926CEE2B1CA6450030373C /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CED2B1CA6450030373C /* ForecastView.swift */; };
+		25926CF02B1CA6680030373C /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CEF2B1CA6680030373C /* ForecastViewModel.swift */; };
+		25926CF22B1CB6580030373C /* ForecastCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CF12B1CB6580030373C /* ForecastCellView.swift */; };
+		25926CF42B1CB6750030373C /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CF32B1CB6750030373C /* ForecastCellViewModel.swift */; };
+		25926CF72B1CE6170030373C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CF62B1CE6170030373C /* Colors.swift */; };
+		25EA407F2B1CFE2E00A3F086 /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA407E2B1CFE2E00A3F086 /* AddLocationView.swift */; };
+		25EA40832B1CFE3E00A3F086 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA40822B1CFE3E00A3F086 /* AddLocationViewModel.swift */; };
+		25EA40872B1D008700A3F086 /* AddLocationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA40862B1D008700A3F086 /* AddLocationCellView.swift */; };
+		25EA40892B1D00C200A3F086 /* AddLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA40882B1D00C200A3F086 /* AddLocationCellViewModel.swift */; };
+		25EA408C2B25F79D00A3F086 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA408B2B25F79D00A3F086 /* GeocodingService.swift */; };
+		25EA408E2B25F82B00A3F086 /* GeocodingPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA408D2B25F82B00A3F086 /* GeocodingPreviewClient.swift */; };
+		25EA40902B25F84400A3F086 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA408F2B25F84400A3F086 /* GeocodingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2544407A2B2CB45900343890 /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
+		2544407D2B2CB4C400343890 /* CLGeocoder+Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLGeocoder+Geocoder.swift"; sourceTree = "<group>"; };
+		2544407F2B2DBFEE00343890 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		254440812B2DC01C00343890 /* AddLocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationListView.swift; sourceTree = "<group>"; };
+		254440832B2F32CF00343890 /* UserDefaults+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Location.swift"; sourceTree = "<group>"; };
 		25926CC22B1B5F6B0030373C /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
-		25926CC72B1B5F6B0030373C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25926CC92B1B5F6C0030373C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25926CCC2B1B5F6C0030373C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25926CD72B1B61020030373C /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		25926CD92B1B610A0030373C /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		25926CDC2B1B662E0030373C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		25926CDE2B1B678F0030373C /* LocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellViewModel.swift; sourceTree = "<group>"; };
+		25926CE12B1BBFC80030373C /* LocationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellView.swift; sourceTree = "<group>"; };
+		25926CE42B1CA5090030373C /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		25926CE72B1CA5160030373C /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		25926CE92B1CA6020030373C /* CurrentConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsView.swift; sourceTree = "<group>"; };
+		25926CEB2B1CA6280030373C /* CurrentConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsViewModel.swift; sourceTree = "<group>"; };
+		25926CED2B1CA6450030373C /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		25926CEF2B1CA6680030373C /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		25926CF12B1CB6580030373C /* ForecastCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellView.swift; sourceTree = "<group>"; };
+		25926CF32B1CB6750030373C /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
+		25926CF62B1CE6170030373C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		25EA407E2B1CFE2E00A3F086 /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
+		25EA40822B1CFE3E00A3F086 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
+		25EA40862B1D008700A3F086 /* AddLocationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellView.swift; sourceTree = "<group>"; };
+		25EA40882B1D00C200A3F086 /* AddLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModel.swift; sourceTree = "<group>"; };
+		25EA408B2B25F79D00A3F086 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
+		25EA408D2B25F82B00A3F086 /* GeocodingPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingPreviewClient.swift; sourceTree = "<group>"; };
+		25EA408F2B25F84400A3F086 /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2544407C2B2CB49A00343890 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2544407D2B2CB4C400343890 /* CLGeocoder+Geocoder.swift */,
+				254440832B2F32CF00343890 /* UserDefaults+Location.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		25926CB92B1B5F6B0030373C = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +110,12 @@
 		25926CC42B1B5F6B0030373C /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
-				25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */,
-				25926CC72B1B5F6B0030373C /* ContentView.swift */,
-				25926CC92B1B5F6C0030373C /* Assets.xcassets */,
+				2544407C2B2CB49A00343890 /* Extensions */,
+				25EA408A2B25F79300A3F086 /* Geocoding */,
+				25926CDB2B1B66280030373C /* Models */,
+				25926CD42B1B60EB0030373C /* Views */,
+				25926CD32B1B60E40030373C /* App */,
+				25926CF52B1CE6010030373C /* Resources */,
 				25926CCB2B1B5F6C0030373C /* Preview Content */,
 			);
 			path = Thunderstorm;
@@ -65,6 +127,115 @@
 				25926CCC2B1B5F6C0030373C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25926CD32B1B60E40030373C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25926CD42B1B60EB0030373C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25EA407D2B1CFE1900A3F086 /* Add Location */,
+				25926CE32B1CA4FD0030373C /* Location */,
+				25926CD62B1B60FB0030373C /* Locations */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25926CD52B1B60F20030373C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				25926CD92B1B610A0030373C /* LocationsViewModel.swift */,
+				25926CDE2B1B678F0030373C /* LocationCellViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		25926CD62B1B60FB0030373C /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				25926CD52B1B60F20030373C /* View Models */,
+				25926CD72B1B61020030373C /* LocationsView.swift */,
+				25926CE12B1BBFC80030373C /* LocationCellView.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		25926CDB2B1B66280030373C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25926CDC2B1B662E0030373C /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25926CE32B1CA4FD0030373C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				25926CE42B1CA5090030373C /* LocationView.swift */,
+				25926CE92B1CA6020030373C /* CurrentConditionsView.swift */,
+				25926CED2B1CA6450030373C /* ForecastView.swift */,
+				25926CF12B1CB6580030373C /* ForecastCellView.swift */,
+				25926CE62B1CA50B0030373C /* View Models */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		25926CE62B1CA50B0030373C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				25926CE72B1CA5160030373C /* LocationViewModel.swift */,
+				25926CEB2B1CA6280030373C /* CurrentConditionsViewModel.swift */,
+				25926CEF2B1CA6680030373C /* ForecastViewModel.swift */,
+				25926CF32B1CB6750030373C /* ForecastCellViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		25926CF52B1CE6010030373C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25926CC92B1B5F6C0030373C /* Assets.xcassets */,
+				25926CF62B1CE6170030373C /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25EA407D2B1CFE1900A3F086 /* Add Location */ = {
+			isa = PBXGroup;
+			children = (
+				25EA40842B1D007400A3F086 /* View Models */,
+				25EA407E2B1CFE2E00A3F086 /* AddLocationView.swift */,
+				25EA40862B1D008700A3F086 /* AddLocationCellView.swift */,
+				2544407F2B2DBFEE00343890 /* MessageView.swift */,
+				254440812B2DC01C00343890 /* AddLocationListView.swift */,
+			);
+			path = "Add Location";
+			sourceTree = "<group>";
+		};
+		25EA40842B1D007400A3F086 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				25EA40822B1CFE3E00A3F086 /* AddLocationViewModel.swift */,
+				25EA40882B1D00C200A3F086 /* AddLocationCellViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		25EA408A2B25F79300A3F086 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				25EA408B2B25F79D00A3F086 /* GeocodingService.swift */,
+				25EA408D2B25F82B00A3F086 /* GeocodingPreviewClient.swift */,
+				25EA408F2B25F84400A3F086 /* GeocodingClient.swift */,
+				2544407A2B2CB45900343890 /* Geocoder.swift */,
+			);
+			path = Geocoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +308,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25926CC82B1B5F6B0030373C /* ContentView.swift in Sources */,
+				25EA40872B1D008700A3F086 /* AddLocationCellView.swift in Sources */,
+				25EA408C2B25F79D00A3F086 /* GeocodingService.swift in Sources */,
+				25926CEC2B1CA6280030373C /* CurrentConditionsViewModel.swift in Sources */,
+				25EA40892B1D00C200A3F086 /* AddLocationCellViewModel.swift in Sources */,
+				25926CF72B1CE6170030373C /* Colors.swift in Sources */,
+				254440822B2DC01C00343890 /* AddLocationListView.swift in Sources */,
+				25926CEA2B1CA6020030373C /* CurrentConditionsView.swift in Sources */,
+				2544407E2B2CB4C400343890 /* CLGeocoder+Geocoder.swift in Sources */,
+				25926CEE2B1CA6450030373C /* ForecastView.swift in Sources */,
+				25926CF22B1CB6580030373C /* ForecastCellView.swift in Sources */,
+				25926CD82B1B61020030373C /* LocationsView.swift in Sources */,
+				25EA40902B25F84400A3F086 /* GeocodingClient.swift in Sources */,
+				2544407B2B2CB45900343890 /* Geocoder.swift in Sources */,
 				25926CC62B1B5F6B0030373C /* ThunderstormApp.swift in Sources */,
+				25EA40832B1CFE3E00A3F086 /* AddLocationViewModel.swift in Sources */,
+				25926CDD2B1B662E0030373C /* Location.swift in Sources */,
+				25926CDA2B1B610A0030373C /* LocationsViewModel.swift in Sources */,
+				254440842B2F32CF00343890 /* UserDefaults+Location.swift in Sources */,
+				25EA408E2B25F82B00A3F086 /* GeocodingPreviewClient.swift in Sources */,
+				25926CE52B1CA5090030373C /* LocationView.swift in Sources */,
+				25926CF42B1CB6750030373C /* ForecastCellViewModel.swift in Sources */,
+				25926CE22B1BBFC80030373C /* LocationCellView.swift in Sources */,
+				25926CF02B1CA6680030373C /* ForecastViewModel.swift in Sources */,
+				25EA407F2B1CFE2E00A3F086 /* AddLocationView.swift in Sources */,
+				25926CDF2B1B678F0030373C /* LocationCellViewModel.swift in Sources */,
+				25926CE82B1CA5160030373C /* LocationViewModel.swift in Sources */,
+				254440802B2DBFEE00343890 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +473,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +501,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

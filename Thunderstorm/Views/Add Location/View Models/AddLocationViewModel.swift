@@ -28,6 +28,7 @@ final class AddLocationViewModel: ObservableObject {
     // MARK: - Properties
 
     private let geocodingService: GeocodingService
+    private let localStorage: Store
     private var subscriptions: Set<AnyCancellable> = []
 
     // MARK: - Computed Properties
@@ -38,8 +39,12 @@ final class AddLocationViewModel: ObservableObject {
 
     // MARK: - Initializer
 
-    init(geocodingService: GeocodingService) {
+    init(
+        geocodingService: GeocodingService,
+        localStorage: Store
+    ) {
         self.geocodingService = geocodingService
+        self.localStorage = localStorage
         setupBindings()
     }
 
@@ -50,12 +55,7 @@ final class AddLocationViewModel: ObservableObject {
             return
         }
 
-        let data = UserDefaults.standard.locations ?? Data()
-        var locations = (try? JSONDecoder().decode([Location].self, from: data)) ?? []
-        locations.append(location)
-        if let newData = try? JSONEncoder().encode(locations) {
-            UserDefaults.standard.locations = newData
-        }
+        try? localStorage.addLocation(location)
     }
     
     private func setupBindings() {

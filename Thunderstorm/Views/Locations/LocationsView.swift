@@ -52,5 +52,5 @@ struct LocationsView: View {
 }
 
 #Preview {
-    LocationsView(viewModel: .init())
+    LocationsView(viewModel: .init(store: PreviewStore()))
 }

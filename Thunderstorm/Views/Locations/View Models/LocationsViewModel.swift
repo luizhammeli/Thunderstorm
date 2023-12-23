@@ -11,6 +11,7 @@ import Foundation
 final class LocationsViewModel: ObservableObject {
     // MARK: - Properties
     @Published private(set) var locationCellViewModels: [LocationCellViewModel] = []
+    private var store: Store
 
     var title: String {
         "Thunderstorm"
@@ -21,15 +22,15 @@ final class LocationsViewModel: ObservableObject {
     }
 
     var addLocationViewModel: AddLocationViewModel{
-        AddLocationViewModel(geocodingService: GeocodingClient())
+        AddLocationViewModel(geocodingService: GeocodingClient(), localStorage: store)
+    }
+
+    init(store: Store) {
+        self.store = store
     }
 
     func start() {
-        UserDefaults.standard
-            .publisher(for: \.locations)
-            .compactMap { $0 }
-            .decode(type: [Location].self, decoder: JSONDecoder())
-            .replaceError(with: [])
+        store.locationsPublisher
             .map({ $0.map(LocationCellViewModel.init(location:)) })
             .eraseToAnyPublisher()
             .assign(to: &$locationCellViewModels)

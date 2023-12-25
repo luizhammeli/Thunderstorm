@@ -16,10 +16,3 @@ extension WeatherData {
         return try! WeatherDataDecoder().decode(WeatherData.self, from: data)
     }
 }
-
-final class WeatherDataDecoder: JSONDecoder {
-    override init() {
-        super.init()
-        dateDecodingStrategy = .secondsSince1970
-    }
-}

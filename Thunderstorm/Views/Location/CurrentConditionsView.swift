@@ -29,5 +29,8 @@ struct CurrentConditionsView: View {
 }
 
 #Preview {
-    CurrentConditionsView(viewModel: .init())
+    let currently = WeatherData.preview.currently
+    return CurrentConditionsView(
+        viewModel: .init(currentConditions: currently)
+    )
 }

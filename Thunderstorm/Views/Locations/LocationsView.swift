@@ -29,7 +29,9 @@ struct LocationsView: View {
 
                     ForEach(viewModel.locationCellViewModels) { viewModel in
                         NavigationLink {
-                            LocationView(viewModel: viewModel.locationViewModel)
+                            NavigationLazyView(
+                                LocationView(viewModel: viewModel.locationViewModel)
+                            )                            
                         } label: {
                             LocationCellView(viewModel: viewModel)
                         }
@@ -52,5 +54,7 @@ struct LocationsView: View {
 }
 
 #Preview {
-    LocationsView(viewModel: .init(store: PreviewStore()))
+    LocationsView(
+        viewModel: .init(store: PreviewStore(), weatherService: WeatherPreviewClient())
+    )
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct LocationCellView: View {
     // MARK: - Properties
 
-    let viewModel: LocationCellViewModel
+    @ObservedObject var viewModel: LocationCellViewModel
 
     var body: some View {
 
@@ -52,5 +52,10 @@ struct LocationCellView: View {
 }
 
 #Preview {
-    LocationCellView(viewModel: .init(location: Location.preview))
+    LocationCellView(
+        viewModel: .init(
+            location: Location.preview,
+            weatherService: WeatherPreviewClient()
+        )
+    )
 }

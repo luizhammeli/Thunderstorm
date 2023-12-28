@@ -25,7 +25,12 @@ struct LocationView: View {
 }
 
 #Preview {
-    NavigationView {
-        LocationView(viewModel: .init(location: Location.preview))
+    let viewModel = LocationViewModel(
+        location: Location.preview,
+        weatherData: WeatherData.preview
+    )
+
+    return NavigationView {
+        LocationView(viewModel: viewModel)
     }
 }

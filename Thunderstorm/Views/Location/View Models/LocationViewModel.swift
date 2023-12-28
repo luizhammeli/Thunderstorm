@@ -9,12 +9,13 @@ import Foundation
 
 struct LocationViewModel {
     let location: Location
+    let weatherData: WeatherData?
 
     var forecastViewModel: ForecastViewModel {
         ForecastViewModel()
     }
 
     var currentConditionsViewModel: CurrentConditionsViewModel {
-        CurrentConditionsViewModel()
+        CurrentConditionsViewModel(currentConditions: weatherData?.currently)
     }
 }

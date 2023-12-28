@@ -7,25 +7,32 @@
 
 import Foundation
 
-struct LocationCellViewModel: Identifiable {
+@MainActor
+class LocationCellViewModel: Identifiable, ObservableObject {
     // MARK: - Properties
     
-    let location: Location
-    
-    init(location: Location) {
-        self.location = location
-    }
+    private let location: Location
+    private let weatherService: WeatherService
 
-    // MARK: - Identifiable
-    
-    var id: String {
-        location.id
+    @Published var weatherData: WeatherData?
+
+    init(
+        location: Location,
+        weatherService: WeatherService
+    ) {
+        self.location = location
+        self.weatherService = weatherService
+        Task {
+            await start()
+        }
     }
     
     // MARK: -
 
+    private let measurementFormatter = ClearSkyFormatter()
+
     var locationViewModel: LocationViewModel {
-        LocationViewModel(location: location)
+        LocationViewModel(location: location, weatherData: weatherData)
     }
 
     var locationName: String {
@@ -37,14 +44,27 @@ struct LocationCellViewModel: Identifiable {
     }
 
     var summary: String? {
-        "Clear"
+        weatherData?.currently.summary
     }
 
     var windSpeed: String? {
-        "10 mi/h"
+        guard let windSpeed = weatherData?.currently.windSpeed else { return nil }
+
+        return measurementFormatter.formatWindSpeed(windSpeed)
     }
 
     var temperature: String? {
-        "90 °F"
+        guard let temperature = weatherData?.currently.temperature else { return nil }
+
+        return measurementFormatter.formatTemperature(temperature)
+
+    }
+
+    func start() async {
+        do {
+            self.weatherData = try await weatherService.weather(for: location)
+        } catch {
+            print("Error to fetch Weather Data \(error.localizedDescription)")
+        }
     }
 }

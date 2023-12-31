@@ -32,7 +32,7 @@ class LocationCellViewModel: Identifiable, ObservableObject {
     private let measurementFormatter = ClearSkyFormatter()
 
     var locationViewModel: LocationViewModel {
-        LocationViewModel(location: location, weatherData: weatherData)
+        LocationViewModel(location: location)
     }
 
     var locationName: String {

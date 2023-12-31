@@ -44,5 +44,7 @@ struct ForecastCellView: View {
 }
 
 #Preview {
-    ForecastCellView(viewModel: .init(forecastDate: Date()))
+    ForecastCellView(
+        viewModel: .init(dayCondition: WeatherData.preview.forecast[0])
+    )
 }

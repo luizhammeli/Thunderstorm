@@ -10,11 +10,12 @@ import Foundation
 struct ForecastCellViewModel: Identifiable {
     // MARK: - Properties
 
-    private let forecastDate: Date
+    private let dayCondition: WeatherData.DayConditions
 
     // MARK: -
 
     private let dateFormatter = DateFormatter()
+    private let numberFormatter = ClearSkyFormatter()
 
     var id: UUID {
         UUID()
@@ -22,35 +23,51 @@ struct ForecastCellViewModel: Identifiable {
 
     var day: String {
         dateFormatter.dateFormat = "EEEE"
-        return dateFormatter.string(from: forecastDate).capitalized
+        return dateFormatter.string(from: dayCondition.time).capitalized
     }
 
     var date: String {
         dateFormatter.dateFormat = "MMMM d"
-        return dateFormatter.string(from: forecastDate).capitalized
+        return dateFormatter.string(from: dayCondition.time).capitalized
     }
 
     var imageName: String {
-        "sun.max"
+        switch dayCondition.icon {
+        case "clear-day":
+            return "sun.max"
+        case "clear-night":
+            return "moon"
+        case "rain":
+            return "cloud.rain"
+        case "snow":
+            return "cloud.snow"
+        case "sleet":
+            return "cloud.sleet"
+        case "wind",
+             "cloudy",
+             "partly-cloudy-day",
+             "partly-cloudy-night":
+            return "cloud"
+        default:
+            return "sun.max"
+        }
     }
 
     var summary: String {
-        "Clear"
+        dayCondition.summary
     }
 
     var windSpeed: String {
-        let windSpeed = Int.random(in: 0...30)
-        return "\(windSpeed) mi/h"
+        numberFormatter.formatWindSpeed(dayCondition.windSpeed)
+
     }
 
     var lowTemperature: String {
-        let temperature = Int.random(in: 50...70)
-        return "\(temperature) °F"
+        numberFormatter.formatTemperature(dayCondition.temperatureLow)
     }
 
     var highTemperature: String {
-        let temperature = Int.random(in: 70...90)
-        return "\(temperature) °F"
+        numberFormatter.formatTemperature(dayCondition.temperatureHigh)
     }
 
     var temperature: String {
@@ -59,7 +76,7 @@ struct ForecastCellViewModel: Identifiable {
 
     // MARK: Init
 
-    init(forecastDate: Date) {
-        self.forecastDate = forecastDate
+    init(dayCondition: WeatherData.DayConditions) {
+        self.dayCondition = dayCondition
     }
 }

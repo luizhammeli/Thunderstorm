@@ -8,26 +8,31 @@
 import SwiftUI
 
 struct LocationView: View {
-    let viewModel: LocationViewModel
+    @ObservedObject var viewModel: LocationViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            CurrentConditionsView(viewModel: viewModel.currentConditionsViewModel)
-                .padding(.top)
 
-            Divider().padding(.top, 15.0)
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                CurrentConditionsView(viewModel: viewModel.currentConditionsViewModel)
+                    .padding(.top)
 
-            ForecastView(viewModel: viewModel.forecastViewModel)
+                Divider().padding(.top, 15.0)
+
+                ForecastView(viewModel: viewModel.forecastViewModel)
+            }
             
         }.padding(.horizontal)
-        .navigationTitle(viewModel.location.name)
+        .navigationTitle(viewModel.title)
     }
 }
 
 #Preview {
     let viewModel = LocationViewModel(
         location: Location.preview,
-        weatherData: WeatherData.preview
+        weatherService: WeatherPreviewClient()
     )
 
     return NavigationView {

@@ -9,12 +9,15 @@ import Foundation
 
 @MainActor
 final class LocationViewModel: ObservableObject {
+    enum State {
+        case loading
+        case data (ForecastViewModel, CurrentConditionsViewModel)
+        case error (String)
+    }
+
     private let location: Location
     private let weatherService: WeatherService
-
-    @Published var isLoading: Bool = false
-    @Published var forecastViewModel: ForecastViewModel = .init(conditions: [])
-    @Published var currentConditionsViewModel: CurrentConditionsViewModel = .init(currentConditions: nil)
+    @Published var state: State = .loading
 
     var title: String {
         location.name
@@ -30,13 +33,14 @@ final class LocationViewModel: ObservableObject {
 
     func start() async {
         do {
-            isLoading = true
             let weatherData = try await weatherService.weather(for: location)
-            forecastViewModel = ForecastViewModel(conditions: weatherData.forecast)
-            currentConditionsViewModel = CurrentConditionsViewModel(currentConditions: weatherData.currently)
-            isLoading = false
+            state = .data(
+                ForecastViewModel(conditions: weatherData.forecast),
+                CurrentConditionsViewModel(currentConditions: weatherData.currently)
+            )
         } catch {
             print("Error to fetch data \(error.localizedDescription)")
+            state = .error(error.localizedDescription)
         }
     }
 }

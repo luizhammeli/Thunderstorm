@@ -13,15 +13,20 @@ struct LocationView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
 
-            if viewModel.isLoading {
+            switch viewModel.state {
+            case .loading:
                 ProgressView()
-            } else {
-                CurrentConditionsView(viewModel: viewModel.currentConditionsViewModel)
+            case .data(let forecastViewModel, let currentConditionsViewModel):
+                CurrentConditionsView(viewModel: currentConditionsViewModel)
                     .padding(.top)
 
                 Divider().padding(.top, 15.0)
 
-                ForecastView(viewModel: viewModel.forecastViewModel)
+                ForecastView(viewModel: forecastViewModel)
+            case .error(let message):
+                Text(message)
+                    .font(.body)
+                    .foregroundStyle(.darkGray)
             }
             
         }.padding(.horizontal)
@@ -29,13 +34,26 @@ struct LocationView: View {
     }
 }
 
-#Preview {
-    let viewModel = LocationViewModel(
-        location: Location.preview,
-        weatherService: WeatherPreviewClient()
-    )
+struct LocationView_Previews: PreviewProvider {
+    static var previews: some View {
+        let viewModel = LocationViewModel(
+            location: Location.preview,
+            weatherService: WeatherPreviewClient()
+        )
 
-    return NavigationView {
-        LocationView(viewModel: viewModel)
+        let viewModelWithError = LocationViewModel(
+            location: Location.preview,
+            weatherService: WeatherPreviewClient(result: .failure(NSError(domain: "", code: 0)))
+        )
+
+        return Group {
+            NavigationView {
+                LocationView(viewModel: viewModel)
+            }
+
+            NavigationView {
+                LocationView(viewModel: viewModelWithError)
+            }
+        }
     }
 }

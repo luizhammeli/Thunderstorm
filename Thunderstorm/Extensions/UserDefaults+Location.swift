@@ -33,6 +33,13 @@ extension UserDefaults: Store {
 
         try encode(locations, for: Keys.locations)
     }
+
+    func removeLocation(with id: String) throws {
+        let locations = try decode([Location].self, for: Keys.locations)
+        let filteredLocation = locations?.filter { $0.id != id }
+
+        try encode(filteredLocation, for: Keys.locations)
+    }
 }
 
 fileprivate extension UserDefaults {

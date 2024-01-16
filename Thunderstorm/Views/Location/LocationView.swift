@@ -26,7 +26,7 @@ struct LocationView: View {
             case .error(let message):
                 Text(message)
                     .font(.body)
-                    .foregroundStyle(.darkGray)
+                    .foregroundStyle(Color.customDarkGray)
             }
             
         }.padding(.horizontal)

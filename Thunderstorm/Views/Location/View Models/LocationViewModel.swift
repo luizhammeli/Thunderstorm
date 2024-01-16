@@ -36,7 +36,11 @@ final class LocationViewModel: ObservableObject {
             let weatherData = try await weatherService.weather(for: location)
             state = .data(
                 ForecastViewModel(conditions: weatherData.forecast),
-                CurrentConditionsViewModel(currentConditions: weatherData.currently)
+                CurrentConditionsViewModel(
+                    currentConditions: weatherData.currently,
+                    location: location, 
+                    store: DependencyContainer.store
+                )
             )
         } catch {
             print("Error to fetch data \(error.localizedDescription)")

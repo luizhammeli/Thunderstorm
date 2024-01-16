@@ -24,6 +24,9 @@
 		254440892B36EFE000343890 /* PreviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254440882B36EFE000343890 /* PreviewStore.swift */; };
 		25570AF92B3DBB520059ED5A /* ClearSkyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25570AF82B3DBB520059ED5A /* ClearSkyFormatter.swift */; };
 		25570B012B3DBE670059ED5A /* ThunderstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25570B002B3DBE670059ED5A /* ThunderstormTests.swift */; };
+		255D7A1E2B56B7C2003D699B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 255D7A1D2B56B7C2003D699B /* Swinject */; };
+		255D7A202B56B7C2003D699B /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 255D7A1F2B56B7C2003D699B /* Swinject-Dynamic */; };
+		255D7A222B56B893003D699B /* Container+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A212B56B893003D699B /* Container+Helpers.swift */; };
 		25926CC62B1B5F6B0030373C /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */; };
 		25926CCA2B1B5F6C0030373C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CC92B1B5F6C0030373C /* Assets.xcassets */; };
 		25926CCD2B1B5F6C0030373C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CCC2B1B5F6C0030373C /* Preview Assets.xcassets */; };
@@ -81,6 +84,7 @@
 		25570AF82B3DBB520059ED5A /* ClearSkyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatter.swift; sourceTree = "<group>"; };
 		25570AFE2B3DBE670059ED5A /* ThunderstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25570B002B3DBE670059ED5A /* ThunderstormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormTests.swift; sourceTree = "<group>"; };
+		255D7A212B56B893003D699B /* Container+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Helpers.swift"; sourceTree = "<group>"; };
 		25926CC22B1B5F6B0030373C /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
 		25926CC92B1B5F6C0030373C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255D7A1E2B56B7C2003D699B /* Swinject in Frameworks */,
+				255D7A202B56B7C2003D699B /* Swinject-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +159,7 @@
 			children = (
 				2544407D2B2CB4C400343890 /* CLGeocoder+Geocoder.swift */,
 				254440832B2F32CF00343890 /* UserDefaults+Location.swift */,
+				255D7A212B56B893003D699B /* Container+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +371,10 @@
 			dependencies = (
 			);
 			name = Thunderstorm;
+			packageProductDependencies = (
+				255D7A1D2B56B7C2003D699B /* Swinject */,
+				255D7A1F2B56B7C2003D699B /* Swinject-Dynamic */,
+			);
 			productName = Thunderstorm;
 			productReference = 25926CC22B1B5F6B0030373C /* Thunderstorm.app */;
 			productType = "com.apple.product-type.application";
@@ -396,6 +407,9 @@
 				Base,
 			);
 			mainGroup = 25926CB92B1B5F6B0030373C;
+			packageReferences = (
+				255D7A1C2B56B7C2003D699B /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 25926CC32B1B5F6B0030373C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -444,6 +458,7 @@
 				25926CEC2B1CA6280030373C /* CurrentConditionsViewModel.swift in Sources */,
 				25EA40892B1D00C200A3F086 /* AddLocationCellViewModel.swift in Sources */,
 				25926CF72B1CE6170030373C /* Colors.swift in Sources */,
+				255D7A222B56B893003D699B /* Container+Helpers.swift in Sources */,
 				254007612B3D8FDB003DF755 /* Configuration.swift in Sources */,
 				254007632B3DA110003DF755 /* WeatherPreviewClient.swift in Sources */,
 				254440822B2DC01C00343890 /* AddLocationListView.swift in Sources */,
@@ -741,6 +756,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		255D7A1C2B56B7C2003D699B /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		255D7A1D2B56B7C2003D699B /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 255D7A1C2B56B7C2003D699B /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		255D7A1F2B56B7C2003D699B /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 255D7A1C2B56B7C2003D699B /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25926CBA2B1B5F6B0030373C /* Project object */;
 }

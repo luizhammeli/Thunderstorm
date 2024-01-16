@@ -22,7 +22,7 @@ struct MessageView: View {
             case .message(let message):
                 Text(message)
                     .font(.body)
-                    .foregroundStyle(.darkGray)
+                    .foregroundStyle(Color.customDarkGray)
             case .progressView:
                 ProgressView()
             }

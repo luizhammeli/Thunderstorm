@@ -30,8 +30,8 @@
             filePath = "Thunderstorm/Views/Location/View Models/CurrentConditionsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "summary"
             landmarkType = "24">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "Thunderstorm/Views/Location/View Models/CurrentConditionsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "windSpeed"
             landmarkType = "24">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "Thunderstorm/Views/Location/View Models/CurrentConditionsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "temperature"
             landmarkType = "24">
          </BreakpointContent>
@@ -78,9 +78,9 @@
             filePath = "Thunderstorm/Views/Location/View Models/CurrentConditionsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "init(currentConditions:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(currentConditions:location:store:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -145,6 +145,132 @@
             startingLineNumber = "36"
             endingLineNumber = "36"
             landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A654240-F95B-41F9-B461-3110954E81C6 - 6dce35a735381b41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Thunderstorm.LocationViewModel.start() async -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Location/View%20Models/LocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "1A654240-F95B-41F9-B461-3110954E81C6 - e31d115170ebb936"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Thunderstorm.LocationViewModel.start() async -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Location/View%20Models/LocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "1A654240-F95B-41F9-B461-3110954E81C6 - 79609df2cf20cb47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Thunderstorm.LocationViewModel.start() async -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Location/View%20Models/LocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "1A654240-F95B-41F9-B461-3110954E81C6 - 7335aa180a172346"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Thunderstorm.LocationViewModel.start() async -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Location/View%20Models/LocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A0F7222-8721-43C1-B14F-360E56DE6EAF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/App/ThunderstormApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "registerServices()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A0F7222-8721-43C1-B14F-360E56DE6EAF - ce0635e39b40cdc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.ThunderstormApp.registerServices() -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/App/ThunderstormApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "9A0F7222-8721-43C1-B14F-360E56DE6EAF - fe41bf38655b65b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swinject.Resolver) -&gt; Thunderstorm.Store in Thunderstorm.ThunderstormApp.registerServices() -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/App/ThunderstormApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFFE62F9-A738-43F3-A9ED-320789629A9B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/App/ThunderstormApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "registerServices()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

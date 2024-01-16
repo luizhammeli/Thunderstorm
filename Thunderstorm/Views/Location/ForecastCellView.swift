@@ -21,7 +21,7 @@ struct ForecastCellView: View {
                     Text(viewModel.date)
                     Text(viewModel.summary).padding(.top, 5.0)
                 }.font(.body)
-                .foregroundStyle(.darkGray)
+                .foregroundStyle(Color.customDarkGray)
             }
 
             Spacer()
@@ -31,13 +31,13 @@ struct ForecastCellView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 40, height: 40)
-                    .foregroundStyle(.darkGray)
+                    .foregroundStyle(Color.customDarkGray)
 
                 Group {
                     Text(viewModel.windSpeed)
                     Text(viewModel.temperature)
                 }.font(.body)
-                .foregroundColor(.darkGray)
+                .foregroundColor(Color.customDarkGray)
             }
         }
     }

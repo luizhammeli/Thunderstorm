@@ -9,9 +9,9 @@ import UIKit
 import SwiftUI
 
 extension UIColor {
-    static let darkGray2 = UIColor(named: "DarkGray")
+    static let customDarkGray = UIColor(named: "CDarkGray")
 }
 
 extension Color {
-    static let customDarkGray = Color(.darkGray2 ?? .darkGray)
+    static let customDarkGray = Color(.customDarkGray ?? .darkGray)
 }

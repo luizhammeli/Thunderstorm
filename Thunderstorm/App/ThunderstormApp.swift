@@ -9,12 +9,22 @@ import SwiftUI
 
 @main
 struct ThunderstormApp: App {
+    init() {
+        registerServices()
+    }
+
     var body: some Scene {
         WindowGroup {
             LocationsView(viewModel: .init(
-                store: UserDefaults.standard,
+                store: DependencyContainer.store,
                 weatherService: WeatherClient())
             )
+        }
+    }
+
+    private func registerServices() {
+        DependencyContainer.shared.register(Store.self) { _ in
+            UserDefaults.standard
         }
     }
 }

@@ -34,11 +34,11 @@ extension UserDefaults: Store {
         try encode(locations, for: Keys.locations)
     }
 
-    func removeLocation(with id: String) throws {
-        let locations = try decode([Location].self, for: Keys.locations)
-        let filteredLocation = locations?.filter { $0.id != id }
+    func removeLocation(_ location: Location) throws {
+        var locations = try decode([Location].self, for: Keys.locations)
+        locations?.removeAll(where: { $0.id == location.id })
 
-        try encode(filteredLocation, for: Keys.locations)
+        try encode(locations, for: Keys.locations)
     }
 }
 

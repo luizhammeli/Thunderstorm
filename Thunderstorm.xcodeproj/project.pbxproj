@@ -23,10 +23,11 @@
 		254440872B36EC8100343890 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254440862B36EC8100343890 /* Store.swift */; };
 		254440892B36EFE000343890 /* PreviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254440882B36EFE000343890 /* PreviewStore.swift */; };
 		25570AF92B3DBB520059ED5A /* ClearSkyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25570AF82B3DBB520059ED5A /* ClearSkyFormatter.swift */; };
-		25570B012B3DBE670059ED5A /* ThunderstormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25570B002B3DBE670059ED5A /* ThunderstormTests.swift */; };
 		255D7A1E2B56B7C2003D699B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 255D7A1D2B56B7C2003D699B /* Swinject */; };
 		255D7A202B56B7C2003D699B /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 255D7A1F2B56B7C2003D699B /* Swinject-Dynamic */; };
 		255D7A222B56B893003D699B /* Container+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A212B56B893003D699B /* Container+Helpers.swift */; };
+		255D7A252B56C48F003D699B /* Location+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A242B56C48F003D699B /* Location+Mocks.swift */; };
+		255D7A272B56C4DF003D699B /* AddLocationCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */; };
 		25926CC62B1B5F6B0030373C /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */; };
 		25926CCA2B1B5F6C0030373C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CC92B1B5F6C0030373C /* Assets.xcassets */; };
 		25926CCD2B1B5F6C0030373C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CCC2B1B5F6C0030373C /* Preview Assets.xcassets */; };
@@ -83,8 +84,10 @@
 		254440882B36EFE000343890 /* PreviewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStore.swift; sourceTree = "<group>"; };
 		25570AF82B3DBB520059ED5A /* ClearSkyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatter.swift; sourceTree = "<group>"; };
 		25570AFE2B3DBE670059ED5A /* ThunderstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25570B002B3DBE670059ED5A /* ThunderstormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormTests.swift; sourceTree = "<group>"; };
 		255D7A212B56B893003D699B /* Container+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Helpers.swift"; sourceTree = "<group>"; };
+		255D7A242B56C48F003D699B /* Location+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Mocks.swift"; sourceTree = "<group>"; };
+		255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddLocationCellViewModelTests.swift; path = ThunderstormTests/AddLocationCellViewModelTests.swift; sourceTree = SOURCE_ROOT; };
+		255D7A282B56C6A4003D699B /* Thunderstorm.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Thunderstorm.xctestplan; sourceTree = "<group>"; };
 		25926CC22B1B5F6B0030373C /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
 		25926CC92B1B5F6C0030373C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,14 +179,24 @@
 		25570AFF2B3DBE670059ED5A /* ThunderstormTests */ = {
 			isa = PBXGroup;
 			children = (
-				25570B002B3DBE670059ED5A /* ThunderstormTests.swift */,
+				255D7A232B56C487003D699B /* Exntesions */,
+				255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */,
 			);
 			path = ThunderstormTests;
+			sourceTree = "<group>";
+		};
+		255D7A232B56C487003D699B /* Exntesions */ = {
+			isa = PBXGroup;
+			children = (
+				255D7A242B56C48F003D699B /* Location+Mocks.swift */,
+			);
+			path = Exntesions;
 			sourceTree = "<group>";
 		};
 		25926CB92B1B5F6B0030373C = {
 			isa = PBXGroup;
 			children = (
+				255D7A282B56C6A4003D699B /* Thunderstorm.xctestplan */,
 				25926CC42B1B5F6B0030373C /* Thunderstorm */,
 				25570AFF2B3DBE670059ED5A /* ThunderstormTests */,
 				25926CC32B1B5F6B0030373C /* Products */,
@@ -445,7 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25570B012B3DBE670059ED5A /* ThunderstormTests.swift in Sources */,
+				255D7A252B56C48F003D699B /* Location+Mocks.swift in Sources */,
+				255D7A272B56C4DF003D699B /* AddLocationCellViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.ThunderstormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,7 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.ThunderstormTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

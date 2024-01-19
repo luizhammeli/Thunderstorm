@@ -28,6 +28,9 @@
 		255D7A222B56B893003D699B /* Container+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A212B56B893003D699B /* Container+Helpers.swift */; };
 		255D7A252B56C48F003D699B /* Location+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A242B56C48F003D699B /* Location+Mocks.swift */; };
 		255D7A272B56C4DF003D699B /* AddLocationCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */; };
+		255D7A2D2B5700DC003D699B /* MockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A2C2B5700DC003D699B /* MockStore.swift */; };
+		255D7A2F2B570224003D699B /* MockGeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A2E2B570224003D699B /* MockGeocodingClient.swift */; };
+		255D7A312B5703D8003D699B /* AddLocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D7A302B5703D8003D699B /* AddLocationViewModelTests.swift */; };
 		25926CC62B1B5F6B0030373C /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */; };
 		25926CCA2B1B5F6C0030373C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CC92B1B5F6C0030373C /* Assets.xcassets */; };
 		25926CCD2B1B5F6C0030373C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25926CCC2B1B5F6C0030373C /* Preview Assets.xcassets */; };
@@ -86,8 +89,11 @@
 		25570AFE2B3DBE670059ED5A /* ThunderstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255D7A212B56B893003D699B /* Container+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Helpers.swift"; sourceTree = "<group>"; };
 		255D7A242B56C48F003D699B /* Location+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Mocks.swift"; sourceTree = "<group>"; };
-		255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddLocationCellViewModelTests.swift; path = ThunderstormTests/AddLocationCellViewModelTests.swift; sourceTree = SOURCE_ROOT; };
+		255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddLocationCellViewModelTests.swift; path = ThunderstormTests/Cases/AddLocationCellViewModelTests.swift; sourceTree = SOURCE_ROOT; };
 		255D7A282B56C6A4003D699B /* Thunderstorm.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Thunderstorm.xctestplan; sourceTree = "<group>"; };
+		255D7A2C2B5700DC003D699B /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
+		255D7A2E2B570224003D699B /* MockGeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGeocodingClient.swift; sourceTree = "<group>"; };
+		255D7A302B5703D8003D699B /* AddLocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModelTests.swift; sourceTree = "<group>"; };
 		25926CC22B1B5F6B0030373C /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25926CC52B1B5F6B0030373C /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
 		25926CC92B1B5F6C0030373C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,8 +185,9 @@
 		25570AFF2B3DBE670059ED5A /* ThunderstormTests */ = {
 			isa = PBXGroup;
 			children = (
+				255D7A2A2B5700C6003D699B /* Cases */,
+				255D7A292B5700A8003D699B /* Mocks */,
 				255D7A232B56C487003D699B /* Exntesions */,
-				255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */,
 			);
 			path = ThunderstormTests;
 			sourceTree = "<group>";
@@ -191,6 +198,24 @@
 				255D7A242B56C48F003D699B /* Location+Mocks.swift */,
 			);
 			path = Exntesions;
+			sourceTree = "<group>";
+		};
+		255D7A292B5700A8003D699B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				255D7A2C2B5700DC003D699B /* MockStore.swift */,
+				255D7A2E2B570224003D699B /* MockGeocodingClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		255D7A2A2B5700C6003D699B /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				255D7A262B56C4DF003D699B /* AddLocationCellViewModelTests.swift */,
+				255D7A302B5703D8003D699B /* AddLocationViewModelTests.swift */,
+			);
+			path = Cases;
 			sourceTree = "<group>";
 		};
 		25926CB92B1B5F6B0030373C = {
@@ -458,8 +483,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255D7A312B5703D8003D699B /* AddLocationViewModelTests.swift in Sources */,
+				255D7A2F2B570224003D699B /* MockGeocodingClient.swift in Sources */,
 				255D7A252B56C48F003D699B /* Location+Mocks.swift in Sources */,
 				255D7A272B56C4DF003D699B /* AddLocationCellViewModelTests.swift in Sources */,
+				255D7A2D2B5700DC003D699B /* MockStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ struct AddLocationView: View {
 
     var body: some View {
         VStack {
-            TextField(viewModel.title, text: $viewModel.query).padding()
+            TextField(viewModel.placeHolder, text: $viewModel.query).padding()
             switch viewModel.state {
             case .empty:
                 Spacer()

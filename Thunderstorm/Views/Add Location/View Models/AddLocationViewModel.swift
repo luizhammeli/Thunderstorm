@@ -19,7 +19,7 @@ final class AddLocationViewModel: ObservableObject {
 
     // MARK: - Published Properties
 
-    @Published var title: String = "Enter the name of a city ..."
+    //@Published var title: String = ""
     @Published var query: String = ""
     @Published var state: State = .empty
     @Published private var isQuerying = false
@@ -29,6 +29,7 @@ final class AddLocationViewModel: ObservableObject {
 
     private let geocodingService: GeocodingService
     private let localStorage: Store
+    private let throttleInterval: RunLoop.SchedulerTimeType.Stride
     private var subscriptions: Set<AnyCancellable> = []
 
     // MARK: - Computed Properties
@@ -41,10 +42,12 @@ final class AddLocationViewModel: ObservableObject {
 
     init(
         geocodingService: GeocodingService,
-        localStorage: Store
+        localStorage: Store,
+        throttleInterval: RunLoop.SchedulerTimeType.Stride = 1.0
     ) {
         self.geocodingService = geocodingService
         self.localStorage = localStorage
+        self.throttleInterval = throttleInterval
         setupBindings()
     }
 
@@ -60,7 +63,7 @@ final class AddLocationViewModel: ObservableObject {
     
     private func setupBindings() {
         $query
-            .throttle(for: 1.0, scheduler: RunLoop.main, latest: true)
+            .throttle(for: throttleInterval, scheduler: RunLoop.main, latest: true)
             .sink { [weak self] addressString in
                 self?.geocodeAddressString(addressString)
         }.store(in: &subscriptions)

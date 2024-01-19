@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "88E9DB48-3745-45E0-87CC-9F19377AD753"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Thunderstorm/Views/Add Location/View Models/AddLocationViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "geocodeAddressString(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E05D5D41-D184-4221-A197-5B95E8703243"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -213,47 +197,77 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9A0F7222-8721-43C1-B14F-360E56DE6EAF"
+            uuid = "996C8D2C-0F66-4E34-9C0A-3B6860B7267A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Thunderstorm/App/ThunderstormApp.swift"
+            filePath = "ThunderstormTests/Mocks/MockGeocodingClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "registerServices()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "geocodeAddressString(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "9A0F7222-8721-43C1-B14F-360E56DE6EAF - ce0635e39b40cdc9"
+                  uuid = "996C8D2C-0F66-4E34-9C0A-3B6860B7267A - 55eba29c73624b11"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Thunderstorm.ThunderstormApp.registerServices() -&gt; ()"
-                  moduleName = "Thunderstorm"
+                  symbolName = "(1) suspend resume partial function for ThunderstormTests.MockGeocodingClient.geocodeAddressString(Swift.String) async throws -&gt; Swift.Array&lt;Thunderstorm.Location&gt;"
+                  moduleName = "ThunderstormTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/App/ThunderstormApp.swift"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Mocks/MockGeocodingClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "32">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "192">
                </Location>
                <Location
-                  uuid = "9A0F7222-8721-43C1-B14F-360E56DE6EAF - fe41bf38655b65b2"
+                  uuid = "996C8D2C-0F66-4E34-9C0A-3B6860B7267A - 55eba29c73624b11"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swinject.Resolver) -&gt; Thunderstorm.Store in Thunderstorm.ThunderstormApp.registerServices() -&gt; ()"
-                  moduleName = "Thunderstorm"
+                  symbolName = "(1) suspend resume partial function for ThunderstormTests.MockGeocodingClient.geocodeAddressString(Swift.String) async throws -&gt; Swift.Array&lt;Thunderstorm.Location&gt;"
+                  moduleName = "ThunderstormTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/App/ThunderstormApp.swift"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Mocks/MockGeocodingClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "996C8D2C-0F66-4E34-9C0A-3B6860B7267A - 55eba29c73624895"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ThunderstormTests.MockGeocodingClient.geocodeAddressString(Swift.String) async throws -&gt; Swift.Array&lt;Thunderstorm.Location&gt;"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Mocks/MockGeocodingClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "996C8D2C-0F66-4E34-9C0A-3B6860B7267A - 55eba29c73624895"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ThunderstormTests.MockGeocodingClient.geocodeAddressString(Swift.String) async throws -&gt; Swift.Array&lt;Thunderstorm.Location&gt;"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Mocks/MockGeocodingClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "220">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -261,17 +275,594 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CFFE62F9-A738-43F3-A9ED-320789629A9B"
+            uuid = "6EA36011-A6A4-4625-87A7-A78507D44DD8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Thunderstorm/App/ThunderstormApp.swift"
+            filePath = "ThunderstormTests/Mocks/MockGeocodingClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "registerServices()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "geocodeAddressString(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6EA36011-A6A4-4625-87A7-A78507D44DD8 - 55eba29c73624b30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ThunderstormTests.MockGeocodingClient.geocodeAddressString(Swift.String) async throws -&gt; Swift.Array&lt;Thunderstorm.Location&gt;"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Mocks/MockGeocodingClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "6EA36011-A6A4-4625-87A7-A78507D44DD8 - 55eba29c736248b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ThunderstormTests.MockGeocodingClient.geocodeAddressString(Swift.String) async throws -&gt; Swift.Array&lt;Thunderstorm.Location&gt;"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Mocks/MockGeocodingClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1DF82F5-9E31-40D6-9F03-6ECE6F493A5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ThunderstormTests/Mocks/MockGeocodingClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "geocodeAddressString(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15CA3B88-5EAD-43FD-B823-53527C5D7D59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "AddLocationViewModelTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "15CA3B88-5EAD-43FD-B823-53527C5D7D59 - d39146250efab1d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; () in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "15CA3B88-5EAD-43FD-B823-53527C5D7D59 - d39146250efab1f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; () in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "15CA3B88-5EAD-43FD-B823-53527C5D7D59 - d39146250efa8e36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; () in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "15CA3B88-5EAD-43FD-B823-53527C5D7D59 - d39146250efa8d2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; () in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC190E17-7713-4226-A3D9-67037FBB665F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "AddLocationViewModelTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DC190E17-7713-4226-A3D9-67037FBB665F - c7f430e1b674121c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; Swift.Bool in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "DC190E17-7713-4226-A3D9-67037FBB665F - c7f430e1b67412fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; Swift.Bool in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "DC190E17-7713-4226-A3D9-67037FBB665F - c7f430e1b67412bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; Swift.Bool in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "DC190E17-7713-4226-A3D9-67037FBB665F - c7f430e1b67412de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; Swift.Bool in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "DC190E17-7713-4226-A3D9-67037FBB665F - c7f430e1b6742fd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Thunderstorm.Location&gt;) -&gt; Swift.Bool in ThunderstormTests.AddLocationViewModelTests.test_() async -&gt; ()"
+                  moduleName = "ThunderstormTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/ThunderstormTests/Cases/AddLocationViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/Views/Add Location/View Models/AddLocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "addLocation(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40 - f3e4ba06a565445b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40 - f3e4ba06a565445b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40 - 3c2a3174f4a18926"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Thunderstorm.Location) -&gt; Swift.Bool in Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40 - f3e4ba06a5654434"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40 - f3e4ba06a5654434"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "872C0FCC-A8B5-4309-AA6E-85900DA84E40 - 3c2a3174f4a18949"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Thunderstorm.Location) -&gt; Swift.Bool in Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93187C55-CF36-476B-B6FE-75246B6646DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/Views/Add Location/View Models/AddLocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "addLocation(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "93187C55-CF36-476B-B6FE-75246B6646DD - f3e4ba06a5654bd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "93187C55-CF36-476B-B6FE-75246B6646DD - f3e4ba06a5654bb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thunderstorm.AddLocationViewModel.addLocation(id: Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/Views/Add Location/View Models/AddLocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "geocodeAddressString(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - ce591ac782bf39a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - 921f7768ece8f0d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - 7f54d0a06c81fda1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - 37d5357e9c751fae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - ce591ac782bf39de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - 921f7768ece8f0aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - 7f54d0a06c81fddc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "DE880D1C-A3FF-4CE9-B6FC-A14297307D54 - 37d5357e9c751fd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95D4CC9B-ABC9-4E5D-BBB8-8DC711DDAD5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/Views/Add Location/View Models/AddLocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "geocodeAddressString(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95D4CC9B-ABC9-4E5D-BBB8-8DC711DDAD5E - 37d5357e9c751fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "95D4CC9B-ABC9-4E5D-BBB8-8DC711DDAD5E - 37d5357e9c751e11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Thunderstorm.AddLocationViewModel.geocodeAddressString(Swift.String) -&gt; ()"
+                  moduleName = "Thunderstorm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizdinizhammerli/Documents/GitHub/Thunderstorm/Thunderstorm/Views/Add%20Location/View%20Models/AddLocationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B10D3C34-67BC-4302-ADCE-1261CF7033D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Thunderstorm/Views/Add Location/AddLocationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
